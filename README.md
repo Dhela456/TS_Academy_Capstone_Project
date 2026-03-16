@@ -13,7 +13,7 @@
 - [Data Preprocessing & Feature Engineering](#data-preprocessing-&-feature-engineering)
 - [Exploratory Data Analysis (EDA) Insights](#exploratory-data-analysis-(eda)-insights)
 - [XGBoost Model Performance](#xgboost-model-performance)
-- [SARIMAX Analysis (for Store 14, Department 92)](#sarimax-analysis-(for Store 14, Department 92))
+- [SARIMAX Analysis](#sarimax-analysis)
 - [Collaborative Structure & Contributions](#collaborative-structure-&-contributions)
 - [Model Artifacts](#model-artifacts)
 - [Conclusion](#conclusion)
