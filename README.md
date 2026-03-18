@@ -153,7 +153,6 @@ The combination of strong feature engineering and robust modeling techniques pro
 - Oresanya Abdulbasit Akorede
     - [Email](akoredeoresanya100@gmail.com)
     - [GitHub](https://github.com/Oresco3uk/tsacademy_capstoneproject)
-- Ojo Blessing Oluwatobiloba
     - [Email](Ojoblessingoluwatobiloba@gmail.com)
     - [GitHub](https://github.com/Blessing23-bit/Data-science-.git)
 - Oluwafemi Okanlawon
