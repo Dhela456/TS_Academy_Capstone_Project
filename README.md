@@ -130,33 +130,33 @@ The combination of strong feature engineering and robust modeling techniques pro
         
 **Group Members**
 - Ireoluwawolemi Jeremiah Akindipe (Group Leader)
-    - [Email](dhelacruise@gmail.com)
+    - Email: dhelacruise@gmail.com
     - [GitHub](https://github.com/Dhela456/TsAcademy-Capstone-Project)
 - Taiwo Faith Osaremen 
-    - [Email](taiwofaith2020@gmail.com)
+    - Email: taiwofaith2020@gmail.com
     - [GitHub](https://github.com/FaithOsaremen/TSA-Capstone-Project)
 - Ajeboriogbon Samuel A
-    - [Email](samuelajeboriogbon@student.oauife.edu.ng)
+    - Email: samuelajeboriogbon@student.oauife.edu.ng
     - [GitHub](https://github.com/sbmanalyst994/TS_Academy_Capstone_Project)
 - Etuk Saviour Mfon
-    - [Email](ethuksaviour@gmail.com)
+    - Email:ethuksaviour@gmail.com
     - [GitHub](https://github.com/Etuk-saviour/TS-Academy-Capstone-Project)
 -  Olasunkanmi Sam-ladipo
-    - [Email](oladiposunkanmi01@gmail.com)
+    - Email: oladiposunkanmi01@gmail.com
     - [GitHub](https://github.com/dbestdataguy/TSA-Capstone-Project)
 - Lucky Ayinwugyefun Solomon
-    - [Email](solomonlucky112358@gmail.com)
+    - Email: solomonlucky112358@gmail.com
     - [GitHub](https://github.com/Luckysolex/TsAcademy-Capstone-Project)
 - Benedict Chukwuagoziem Amobi-Madu
-    - [Email](benedict.amobimadu@gmail.com)
+    - Email: benedict.amobimadu@gmail.com
     - [GitHub](https://github.com/benedictamobi-madu-cloud/TS_Academy_Capstone_Project)
 - Oresanya Abdulbasit Akorede
-    - [Email](akoredeoresanya100@gmail.com)
+    - Email: akoredeoresanya100@gmail.com
     - [GitHub](https://github.com/Oresco3uk/tsacademy_capstoneproject)
 - Ojo Blessing Oluwatobiloba
-    - [Email](Ojoblessingoluwatobiloba@gmail.com)
+    - Email: Ojoblessingoluwatobiloba@gmail.com
     - [GitHub](https://github.com/Blessing23-bit/Data-science-.git)
 - Oluwafemi Okanlawon
-    - [Email](oluwafemiokans@gmail.com)
+    - Email: oluwafemiokans@gmail.com
     - [GitHub](https://github.com/Oluwafemiokans/TsAcademy-Capstone-Project)
 
