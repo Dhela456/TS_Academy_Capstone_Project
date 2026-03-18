@@ -1,7 +1,7 @@
 
 ---
 # Walmart Store Sales: Predictive Analytics & Forecasting
-### Capstone Project - Data Science & Time Series Analysis
+### Capstone Project (Group2) - Data Science & Time Series Analysis
 ---
 #### This notebook details the process of forecasting weekly sales for Walmart stores and departments, leveraging a comprehensive dataset that includes historical sales, store information, and various economic indicators. 
 #### The project involved extensive data preprocessing, feature engineering, exploratory data analysis (EDA), and the development of both machine learning (XGBoost) and time series (SARIMAX) models.
