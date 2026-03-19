@@ -3,7 +3,7 @@
 # Walmart Store Sales: Predictive Analytics & Forecasting
 ### Capstone Project (Group2) - Data Science & Time Series Analysis
 ---
-#### This notebook details the process of forecasting weekly sales for Walmart stores and departments, leveraging a comprehensive dataset that includes historical sales, store information, and various economic indicators. 
+#### This notebook details the process of forecasting weekly sales for Walmart stores and departments, leveraging a comprehensive dataset that includes historical sales, store information, and various economic indicators.
 #### The project involved extensive data preprocessing, feature engineering, exploratory data analysis (EDA), and the development of both machine learning (XGBoost) and time series (SARIMAX) models.
 
 ####
@@ -17,9 +17,9 @@
 - [Collaborative Structure & Contributions](#collaborative-structure-&-contributions)
 - [Model Artifacts](#model-artifacts)
 - [Conclusion](#conclusion)
-        
+
 ## **1. Data Overview**
-This project delivers a high-precision forecasting engine for Walmart Weekly Sales across 45 stores. The objective was to predict sales patterns while accounting for regional factors (CPI, Unemployment), store attributes (Size, Type), and critical holiday seasonality. 
+This project delivers a high-precision forecasting engine for Walmart Weekly Sales across 45 stores. The objective was to predict sales patterns while accounting for regional factors (CPI, Unemployment), store attributes (Size, Type), and critical holiday seasonality.
 By leveraging a hybrid modeling approach (SARIMAX and XGBoost), the project successfully navigates the high-variance nature of retail data and minimizes error using the industry-specific WMAE metric.
 The dataset comprises:
 - **`stores.csv`**: Anonymized store information (Type and Size).
@@ -29,7 +29,7 @@ The dataset comprises:
 
 Key challenge: Modeling promotional markdown events preceding major holidays (Super Bowl, Labor Day, Thanksgiving, Christmas), which are weighted five times higher in evaluation.
 
-        
+
 ## **2. Data Preprocessing & Feature Engineering**
 
 - **Master Merge**: `train` and `test` datasets were concatenated, then merged with `stores` and `features` based on `Store`, `Date`, and `IsHoliday`.
@@ -45,7 +45,7 @@ Key challenge: Modeling promotional markdown events preceding major holidays (Su
     - `Size_Bin`: Categorized `Size` into 'Small', 'Medium', 'Large'.
     - `Size_x_Holiday`: Interaction term between `Size` and `IsHoliday`.
     - `IsWeekend`: Binary flag if the day is a weekend.
-        
+
 ## **3. Exploratory Data Analysis (EDA) Insights**
 
 - **Weekly Sales Distribution**: Highly skewed, with a long tail indicating high sales volumes during peak periods, especially holidays. Minimum sales could be negative (returns).
@@ -56,13 +56,13 @@ Key challenge: Modeling promotional markdown events preceding major holidays (Su
 - **Economic Factors**: `Unemployment` negatively impacts sales (r~-0.1), while `Fuel_Price` has a minimal direct effect. `CPI` and `Fuel_Price` show gradual changes over time, contrasting with the more dramatic fluctuations in sales.
 - **Top Performers**: Departments 92 and 95 in Store 14 (and others) consistently generate the highest revenue.
 - **Time Series Analysis Pre-requisite**: For classical time series models, Store 14, Department 92 was identified as a promising candidate due to its consistent data and significant holiday weeks.
-        
+
 ## **4. XGBoost Model Performance**
 
 - **Baseline Model**: An initial XGBoost model was trained and evaluated.
     - Mean Absolute Error (MAE): 3891.059015672673
     - R-squared Score: 0.911075075888279
-    
+
 - **Hyperparameter Tuning (GridSearchCV)**:
     - Best parameters found: {'xgb_model__learning_rate': 0.1, 'xgb_model__max_depth': 9, 'xgb_model__n_estimators': 500}.
     - **Tuned Model Performance**:
@@ -76,7 +76,7 @@ The tuned XGBoost model demonstrated a significant improvement, explaining over 
 
 - **Feature Importance (XGBoost)**:
     The feature importance analysis highlighted the most influential factors in predicting weekly sales, with `Sales_Last_Year` likely being a top predictor due to its strong seasonal signal, followed by other temporal and store-specific features.
-        
+
 ## **5. SARIMAX Analysis (for Store 14, Department 92)**
 
 - **Stationarity Check**: The `Weekly_Sales` series for Store 14, Dept 92 was found to be non-stationary (ADF p-value > 0.05). First-order differencing (`shift(2)`) was applied to achieve stationarity.
@@ -94,10 +94,10 @@ The tuned XGBoost model demonstrated a significant improvement, explaining over 
     - Retuned Validation WMAE (original scale): 17248.17
     - Retuned Regular MAE (original scale): 18791.82
     - **WMAE Improvement**: 4283.98 (compared to the original SARIMAX).
-        
+
 ## **5. Collaborative Structure & Contributions**
 To achieve these results, the project was executed by three specialized functional groups:
-- **Group A: Data Merging & Feature Engineering** 
+- **Group A: Data Merging & Feature Engineering**
     - **Infrastructure**: Merged fragmented datasets (stores, features, and train) into a unified analytical base.
     - **Cleaning**: Addressed missing values in Markdown columns and ensured temporal consistency by handling missing Friday entries.
     - **Feature Engineering**: Extracted cyclical time features (Week, Month, Year) and also engineered new features to feed more information into the model.
@@ -112,7 +112,7 @@ To achieve these results, the project was executed by three specialized function
     - **Reporting**: Synthesized model outputs into actionable business insights, identifying that Store Size and Department type are the strongest predictors of baseline revenue.
     - **Insights**: Shared deep insights on several relationships in the dataset and uncovered many useful insights
 
-        
+
 ## **6. Model Artifacts**
 All components of the pipeline were saved using joblib for future use. This includes:
 - Trained models (XGBoost and Sarimax)
@@ -120,43 +120,43 @@ All components of the pipeline were saved using joblib for future use. This incl
 - StandardScaler for numerical features
 - Feature importance for XGBoost.
 The artifacts are saved in the 'model_artifacts' directory.
-        
+
 ## **7. Conclusion**
-The project successfully developed and evaluated models for Walmart sales forecasting. The XGBoost model performed exceptionally well across the entire dataset after hyperparameter tuning, achieving a high R-squared and significantly reducing MAE. 
-The SARIMAX model, applied to a specific store-department combination, also showed strong performance, especially after `auto_arima` tuning, demonstrating the effectiveness of time series methods for individual series forecasting. 
+The project successfully developed and evaluated models for Walmart sales forecasting. The XGBoost model performed exceptionally well across the entire dataset after hyperparameter tuning, achieving a high R-squared and significantly reducing MAE.
+The SARIMAX model, applied to a specific store-department combination, also showed strong performance, especially after `auto_arima` tuning, demonstrating the effectiveness of time series methods for individual series forecasting.
 The combination of strong feature engineering and robust modeling techniques proved effective in capturing the complex patterns of retail sales, including seasonal and holiday-driven fluctuations.
 
 **Note**: The models, while effective, may still have limitations due to the inherent complexity and variability in sales data.
-        
+
 **Group Members**
 - Ireoluwawolemi Jeremiah Akindipe (Group Leader)
-    - [Email](dhelacruise@gmail.com)
+    - Email: dhelacruise@gmail.com
     - [GitHub](https://github.com/Dhela456/TsAcademy-Capstone-Project)
-- Taiwo Faith Osaremen 
-    - [Email](taiwofaith2020@gmail.com)
+- Taiwo Faith Osaremen
+    - Email: taiwofaith2020@gmail.com
     - [GitHub](https://github.com/FaithOsaremen/TSA-Capstone-Project)
 - Ajeboriogbon Samuel A
-    - [Email](samuelajeboriogbon@student.oauife.edu.ng)
+    - Email: samuelajeboriogbon@student.oauife.edu.ng
     - [GitHub](https://github.com/sbmanalyst994/TS_Academy_Capstone_Project)
 - Etuk Saviour Mfon
-    - [Email](ethuksaviour@gmail.com)
+    - Email: ethuksaviour@gmail.com
     - [GitHub](https://github.com/Etuk-saviour/TS-Academy-Capstone-Project)
 -  Olasunkanmi Sam-ladipo
-    - [Email](oladiposunkanmi01@gmail.com)
+    - Email: oladiposunkanmi01@gmail.com
     - [GitHub](https://github.com/dbestdataguy/TSA-Capstone-Project)
 - Lucky Ayinwugyefun Solomon
-    - [Email](solomonlucky112358@gmail.com)
+    - Email: solomonlucky112358@gmail.com
     - [GitHub](https://github.com/Luckysolex/TsAcademy-Capstone-Project)
 - Benedict Chukwuagoziem Amobi-Madu
-    - [Email](benedict.amobimadu@gmail.com)
+    - Email: benedict.amobimadu@gmail.com
     - [GitHub](https://github.com/benedictamobi-madu-cloud/TS_Academy_Capstone_Project)
 - Oresanya Abdulbasit Akorede
-    - [Email](akoredeoresanya100@gmail.com)
+    - Email: akoredeoresanya100@gmail.com
     - [GitHub](https://github.com/Oresco3uk/tsacademy_capstoneproject)
 - Ojo Blessing Oluwatobiloba
-    - [Email](Ojoblessingoluwatobiloba@gmail.com)
+    - Email: Ojoblessingoluwatobiloba@gmail.com
     - [GitHub](https://github.com/Blessing23-bit/Data-science-.git)
 - Oluwafemi Okanlawon
-    - [Email](oluwafemiokans@gmail.com)
+    - Email: oluwafemiokans@gmail.com
     - [GitHub](https://github.com/Oluwafemiokans/TsAcademy-Capstone-Project)
 
