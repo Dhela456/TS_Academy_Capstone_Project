@@ -132,14 +132,22 @@ The combination of strong feature engineering and robust modeling techniques pro
 - Ireoluwawolemi Jeremiah Akindipe (Group Leader)
     - Email: dhelacruise@gmail.com
     - [GitHub](https://github.com/Dhela456/TsAcademy-Capstone-Project)
+<<<<<<< HEAD
 - Taiwo Faith Osaremen
+=======
+- Taiwo Faith Osaremen 
+>>>>>>> d207513718369172d628f385e67f6fb34d604f84
     - Email: taiwofaith2020@gmail.com
     - [GitHub](https://github.com/FaithOsaremen/TSA-Capstone-Project)
 - Ajeboriogbon Samuel A
     - Email: samuelajeboriogbon@student.oauife.edu.ng
     - [GitHub](https://github.com/sbmanalyst994/TS_Academy_Capstone_Project)
 - Etuk Saviour Mfon
+<<<<<<< HEAD
     - Email: ethuksaviour@gmail.com
+=======
+    - Email:ethuksaviour@gmail.com
+>>>>>>> d207513718369172d628f385e67f6fb34d604f84
     - [GitHub](https://github.com/Etuk-saviour/TS-Academy-Capstone-Project)
 -  Olasunkanmi Sam-ladipo
     - Email: oladiposunkanmi01@gmail.com
